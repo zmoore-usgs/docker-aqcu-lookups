@@ -10,17 +10,16 @@
       file: ./secrets/aquariusPassword.txt
 
   services:
-    aqcu-lookups:
+    aqcu-lookups-service:
       build: .
       image: aqcu-lookups-service
       ports:
         - "7503:7503"
       secrets:
         - source: tomcat_ssl_crt
-          target: /tomcat-wildcard-ssl.crt
+          target: /home/spring/tomcat-wildcard-ssl.crt
         - source: tomcat_ssl_key
-          target: /tomcat-wildcard-ssl.key
-        - source: aquarius_service_password
-          target: /aquariusPassword.txt
+          target: /home/spring/tomcat-wildcard-ssl.key
       env_file:
-        - docker-compose.env
+        - config.env
+        - secrets.env
