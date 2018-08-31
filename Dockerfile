@@ -1,6 +1,6 @@
 FROM cidasdpdasartip.cr.usgs.gov:8447/wma/wma-spring-boot-base:latest
 
-ENV artifact_version=0.0.3
+ENV artifact_version=0.0.4-SNAPSHOT
 ENV serverPort=7503
 ENV aquariusServiceEndpoint=http://ts.nwis.usgs.gov
 ENV aquariusServiceUser=apinwisra
