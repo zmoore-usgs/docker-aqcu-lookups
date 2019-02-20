@@ -1,6 +1,6 @@
 FROM usgswma/wma-spring-boot-base:8-jre-slim
 
-ENV artifact_version=0.0.4
+ENV artifact_version=0.0.5-SNAPSHOT
 ENV serverPort=7503
 ENV aquariusServiceEndpoint=http://ts.nwis.usgs.gov
 ENV aquariusServiceUser=apinwisra
